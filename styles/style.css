@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .rounds {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  div > div {
+    margin: 10px 0;
+  }
+  
+  #ComputerScore, #PlayerScore {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .buttons {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  #pop_up {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+  }
+
+  /* #Double_Points.changed {
+
+    padding: 10px;
+    margin: 5px;
+    background-color: #573636;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #Element_Boost.changed {
+    padding: 10px;
+    margin: 5px;
+    background-color: #573636;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  } */
+
+
+  
+  .buttons:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .buttons:hover {
+    background-color: #2980b9;
+  }
+  
+
+  .io{
+    display: inline;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border: none;
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d4adad;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.swap{
+  display: none;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rps_typescript",
+  "version": "1.0.0",
+  "description": "rps in typescript",
+  "main": "script.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}

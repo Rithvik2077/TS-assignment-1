@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../styles/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Rock Paper Scissor Game.</h1>
+
+    <div id="pop_up">
+      <p id="message">Your custom message goes here.</p>
+    </div>
+
+    <label for="no_of_rounds">Enter number of rounds you want to play:</label>
+    <input type="number" id="no_of_rounds" />
+    <button onclick="noOfRounds()" >Get Value</button>
+    <div>
+      <div>You have choosen: <span class="rounds">0</span> rounds.</div>
+      <div>Round : <span class="rounds">0</span></div>
+    </div>
+
+    <div>
+      <div>Computer score: Your score</div>
+      <div><span id="ComputerScore">0</span> : <span id="PlayerScore">0</span></div>
+    </div>
+
+    <div>
+      Choose your pick:
+      <div>
+        <button class = "buttons" id ="Rock" onclick="choice('0')" disabled>Rock</button>
+        <button class = "buttons" id ="Paper" onclick="choice('1')" disabled>Paper</button>
+        <button class = "buttons" id ="Scissor" onclick="choice('2')" disabled>Scissor</button>
+      </div>
+
+      <div>Computer choose : <span id ="computerChoice"></span></div>
+      <div>You choose : <span id ="playerChoice"></span></div>
+    </div>
+   
+
+    <div>
+      <h2>POWER UPs: </h2>
+      <div class="dropdown">
+        <button class = "buttons" id ="Element_Boost" onclick="toggleDropdown()" disabled>Element Boost</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a onclick="Element_Boost('0')" >ROCK</a>
+            <a onclick="Element_Boost('1')">PAPER</a>
+            <a onclick="Element_Boost('2')">SCISSOR</a>
+        </div>
+      </div>
+      <div class="io">
+        <button type="button" class = "buttons" id = "Double_Points" onclick="Double_Points_Enable()" disabled>Double Points</button>
+      </div> 
+      <div class="io">
+        <button type="button" class = "buttons" id ="Shield" onclick="Shield()" disabled>Shield</button>
+      </div> 
+      <div class="io">
+        <button type="button" class = "buttons" id="Prediction" onclick="Prediction()" disabled>Prediction</button>
+      </div> 
+      <div class="io">
+        <button class = "buttons" id ="Element_Swap" onclick="Element_Swap_enable()" disabled>Element Swap</button>
+      </div>
+
+      <div class="swap" id ="swap">Select Element you want to SWAP:
+        <button onclick="Element_Swap('0')" >ROCK</button>
+        <button onclick="Element_Swap('1')">PAPER</button>
+        <button onclick="Element_Swap('2')">SCISSOR</button>
+    </div>
+
+
+    <script src="./../dist/script.js"></script>
+  </body>
+</html>
